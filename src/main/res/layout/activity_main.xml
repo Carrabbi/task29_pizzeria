@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background = "#86f263">
+
+    <RelativeLayout
+        android:id="@+id/ReLay1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose your pizza!"
+            android:fontFamily="cursive"
+            android:textStyle="bold"
+            android:textSize="50sp"
+            android:color="#000000"
+            android:gravity="center"
+            android:layout_marginBottom ="5dp" />
+
+        <ImageView
+            android:id="@+id/iv_pizza"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:foregroundGravity="center"
+            android:background="@drawable/pizza"
+            android:layout_below="@+id/tv_title" />
+
+        <LinearLayout
+            android:id="@+id/LinLay1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_below="@+id/iv_pizza" >
+
+
+            <LinearLayout
+                android:id="@+id/LinLay1_1"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+
+
+            <TextView
+                android:id="@+id/tv_header1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1st ingredient:"
+                android:fontFamily="cursive"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:color="#000000"
+                android:gravity="start"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom ="10dp"/>
+
+            <RadioGroup
+                android:id="@+id/rg_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                    <RadioButton
+                        android:id="@+id/rb_11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ham"
+                        android:fontFamily="cursive"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:color="#000000"
+                        android:gravity="start"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="bacon"
+                        android:fontFamily="cursive"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:color="#000000"
+                        android:gravity="start"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="mushrooms"
+                        android:fontFamily="cursive"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:color="#000000"
+                        android:gravity="start"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom ="10dp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_header2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2nd ingredient:"
+                android:fontFamily="cursive"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:color="#000000"
+                android:gravity="start"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom ="10dp"/>
+
+            <RadioGroup
+                    android:id="@+id/rg_2"
+                android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <RadioButton
+                        android:id="@+id/rb_21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="tomatoes"
+                        android:fontFamily="cursive"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:color="#000000"
+                        android:gravity="left"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="peppers"
+                        android:fontFamily="cursive"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:color="#000000"
+                        android:gravity="left"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="mushrooms"
+                        android:fontFamily="cursive"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:color="#000000"
+                        android:gravity="left"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom ="10dp" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_header3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3rd ingredient:"
+                android:fontFamily="cursive"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:color="#000000"
+                android:gravity="start"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom ="10dp"/>
+
+            <RadioGroup
+                android:id="@+id/rg_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                    <RadioButton
+                        android:id="@+id/rb_31"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="olives"
+                        android:fontFamily="cursive"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:color="#000000"
+                        android:gravity="start"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_32"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="onions"
+                        android:fontFamily="cursive"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:color="#000000"
+                        android:gravity="start"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_33"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="maize"
+                        android:fontFamily="cursive"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:color="#000000"
+                        android:gravity="start"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom ="10dp" />
+            </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinLay1_2"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btn_1"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="SAVE"
+                    android:fontFamily="cursive"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textAlignment="center"
+                    android:background="#ff3730"
+                    android:textColor= "#eeeaaa"
+                    android:gravity="start"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom ="10dp"
+                    tools:ignore="RtlCompat" />
+
+                <Button
+                    android:id="@+id/btn_2"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="LOAD"
+                    android:fontFamily="cursive"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textAlignment="center"
+                    android:background="#ff3730"
+                    android:textColor= "#eeeaaa"
+                    android:gravity="start"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom ="10dp"
+                    tools:ignore="RtlCompat" />
+
+                <Button
+                    android:id="@+id/btn_3"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="DELETE"
+                    android:fontFamily="cursive"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textAlignment="center"
+                    android:background="#ff3730"
+                    android:textColor= "#eeeaaa"
+                    android:gravity="start"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom ="10dp"
+                    tools:ignore="RtlCompat" />
+
+
+                <Button
+                    android:id="@+id/btn_4"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="CLEAR"
+                    android:fontFamily="cursive"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textAlignment="center"
+                    android:background="#ff3730"
+                    android:textColor= "#eeeaaa"
+                    android:gravity="start"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom ="10dp"
+                    tools:ignore="RtlCompat" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
